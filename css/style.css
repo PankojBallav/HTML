@@ -1,0 +1,529 @@
+/*=========================*/
+/*----Basic Setup----*/
+/*=========================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior:smooth;
+}
+
+/*--Heading--*/
+h1 {
+    font-size: 4.2rem;
+    color: #fff;
+    line-height: 4.2rem;
+
+}
+/*---Botton---*/
+.btn:link,
+.btn:visited,
+.btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 1rem 5rem;
+    border-radius: .5rem;
+    display: inline-block;
+    margin-top: .2rem;
+    font-size: 1.6rem;
+    background:blue;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    text-rendering: optimizeLegibility;
+    line-height: 1.3rem;
+    font-size: 1.6rem;
+
+}
+
+ul li {
+    list-style-type: none;
+}
+
+/*=========================*/
+/*----Reusable Component----*/
+/*=========================*/
+.row {
+    max-width: 114rem;
+    margin: 0 auto;
+}
+
+.service-section {
+    padding: 8rem 0;
+}
+
+h2 {margin-top:12rem; 
+    line-height: 4rem;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #fff;
+    text-align: center;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    height: .4rem;
+    width: 8.5rem;
+    margin: auto;
+    margin-top: 2rem;
+
+}
+
+h3 {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+
+}
+h4{
+    font-size:1.8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top:2.5rem;
+    
+}
+
+.box {
+    padding: 1rem;
+}
+
+.box p {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-top: 2rem;
+    color: #fff;
+}
+
+/*--Paragraph--*/
+.little_description {
+    font-size: 1.8rem;
+    width: 60%;
+    margin-left: 20%;
+    line-height: 3rem;
+    text-align: center;
+}
+
+/*=========================*/
+/*----Header Part----*/
+/*=========================*/
+header {
+    background: linear-gradient(rgba(135, 80, 156, .8), rgba(1355, 80, 156, .8)), url(img/home.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.logo {
+    height: 4rem;
+    width: auto;
+    align-content: 3.5rem;
+    float: left;
+    margin-top: 5rem;
+}
+
+/*=========================*/
+/*----Main Nav----*/
+/*=========================*/
+.main-nav {
+    float: right;
+    margin-top: 6rem;
+    margin-left: 2.5rem;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.main-nav li:first-child {
+    margin-left: 0;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: rgba(102, 51, 102, 0);
+    padding: .4rem .6rem;
+    border-radius: .5rem;
+    display: inline-block;
+    font-size: 1.6rem;
+    transition: .3s;
+
+}
+
+.main-nav li:hover a:link,
+.main-nav li:hover a:visited {
+    background: rgba(102, 51, 102, 1);
+    border-radius: .5rem;
+}
+
+nav  .active{
+    background: rgba(102,51,102, 1); 
+}
+/*==Sticky MEnu==*/
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(135,80,156,.9);
+    padding: 1rem 0;
+    box-shadow: 0 .3rem .5rem rgba(255,255,255, 0.8);
+    z-index: 9999;
+}
+.sticky .logo{
+    margin-top:0; 
+}
+.sticky .main-nav{
+    margin-top: 1rem;
+}
+.hero-text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.btn-hero:link,
+.btn-hero:visited {
+    background: #ff6633;
+    border: #cc6633;
+}
+
+/*=========================*/
+/*----Services Section----*/
+/*=========================*/
+.service-section {
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(rgba(0, 204, 153, .5), rgba(0, 204, 153, .5)), url(img/pattern.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+ 
+.service-section h2::after {
+    background: #009999;
+
+}
+
+.service_icon {
+    height: 12.5rem;
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+
+}
+
+/*=========================*/
+/*-----TEAM SECTION--------*/
+/*=========================*/
+.our_team {
+    text-align: center;
+    background: linear-gradient(rgba(231, 241, 248, .9), rgba(231, 241, 248, .9)), url(img/imac.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.our_team h2 {
+    padding-top: 5rem;
+    color: #3c4761;
+}
+
+.our_team h2::after {
+    background: #c8d9e5;
+}
+
+.team_member {
+    margin-top: 4.5rem;
+    margin-bottom: 4.5rem;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    border: .1rem solid coral;
+}
+
+.our_team h3 {
+    color: #223333;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+
+}
+
+.role {
+    color: #33ccff;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    margin-top:2rem;
+    display:inline-block; 
+}
+
+.our_team .box p {
+    color: #333366;
+}
+
+.social_icon {
+    margin-top: 4.5rem;
+
+}
+
+.social_icon ul li {
+    display: inline-block;
+    margin: .5rem;
+}
+
+.social_icon ul li a:link {
+    color: #fff;
+}
+
+.social_icon ul li a:link i::before {
+    background: #bdd1df;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1rem;
+    transition: 1s;
+}
+
+.social_icon ul li a:hover i::before {
+    background: coral;
+    transform: rotate(360deg);
+
+}
+/*===SKILL SECTION====*/
+.skill_section{
+    text-align:center;
+    background:linear-gradient(rgba(221, 221, 221,.8) ,rgba(221, 221, 221, .8)),url(img/color_fan.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center center;
+    background-attachment:fixed;
+}
+.skill_section h2,.skill_section h3{
+    margin-top: 4rem;
+    color:#3c4761;
+    }
+.skill_section h2::after {
+    background:#ccffff;
+}
+.skill_section box{
+    margin-top:4.5rem;
+}
+svg.radial-progress circle{
+    stroke-width:6;
+}
+svg.radial-progress text{
+    fill:#3c4761;
+    font-size:1.5rem;
+}
+svg.web-design circle{
+    stroke:#38bae7;
+}
+svg.html-css circle{
+    stroke:#cc3399;
+}
+svg.graphic-design circle{
+    stroke:#00cc99;
+}
+svg.ui-ux circle{
+    stroke:#ff6633;
+}
+/*===PORTFOLIO SECTION====*/
+.portfolio-section{
+    background:linear-gradient(rgba(255, 247, 153,.8),rgba(255, 247, 153,.8)),url(img/tec.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:center center;
+    text-align: center;
+    height:120rem;
+}
+.portfolio-section h2{
+    color:#3c4761;
+}
+.portfolio-section h2::after{
+    background:#e5c37f;
+}
+.portfolio-filter{
+    margin:4.5rem 0;
+}
+.portfolio-filter button{
+    background: #ffcc66;
+    text-transform: uppercase;
+    padding:1.5rem;
+    width:8rem;
+    border-radius: .8rem;
+    border:0;
+    margin: 0.5rem;
+    font-size:1.6rem;
+    color:#3c4761;
+    transition: 1s;
+}
+.portfolio-filter button:hover{
+    cursor: pointer;
+    box-shadow: inset 0 .8rem .5rem rgba(60, 71, 97, .5);
+}
+.portfolio-filter button:active{
+    background-color: #fff;
+}
+.portfolio-image{
+    width:100%;
+    height:auto;
+}
+.portfolio-section .col:nth-child(3){
+    margin-left:0;
+}
+.btn-load-more{
+    background:#00cc99;
+   
+    width:30rem;
+    height:3.5rem;
+    margin-top: 2rem;
+    text-align:center;
+}
+.portfolio-section .mixitup-control-active{
+    background:#fff;
+}
+/*==TESTIMONIAL SECTION++*/
+.testimonial{
+    background: linear-gradient(rgba(215,70,128,0.7),rgba(215,70,128,0.7)),url(img/hp_laptop.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+.tetimonial .little_description{
+    text-align:center;
+    color:#fff;
+}
+.testimonial .col:nth-child(3) {
+    margin-left:0;
+}
+.client-photo img{
+    height:14rem;
+    width:14rem;
+    border-radius:50%;
+    border:.2rem solid red;
+}
+   
+.client-photo{
+    height:15rem;
+    width:15rem;
+    float:left;
+}
+
+.testimonial .col:nth-chold(1),.testimonial .col:nth-chold(2){
+    margin-top: 4rem;
+}
+.testimonial .col:nth-chold(3),.testimonial .col:nth-chold(4){
+    margin-top: 8rem;
+}
+.client-review{
+    width:39rem;
+    float:left;
+    
+}
+.testimonial h2::after {
+    background:tomato;
+}
+.client-review p{
+    font-size:2.1rem;
+    font-style:italic;
+    margin-top:0;
+    margin-bottom: 2rem;
+    line-height: 2rem;
+}
+.client-review .role{
+    color:#fff;
+}
+.testimonial .little_description{
+    color:#fff;
+    font-size:1.8rem;
+}
+/*=====Contact Section===*/
+.contact-section{
+    text-align:center;
+    background:linear-gradient(rgba(60, 84, 153,.8),rgba(60, 84, 153,.8)),url(img/house1.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding-bottom: 5rem;
+    background-attachment: fixed;
+}
+.contact-section h2::after{
+    background: #273a71; 
+}
+.contact-section .little_description{
+    color:#fff;
+}
+.contact-section form{
+    margin-top: 5rem;
+    }
+.contact-section input[type="text"],
+.contact-sextion input[type="email"],
+.contact-section textarea{
+    background:#333366;
+    border: .1rem solid #273771; 
+    width:100%;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    font-size: 1.8rem;
+    color:#fff;
+}
+.contact-section textarea{
+    margin-top: 2rem;
+    height: 20rem;
+}
+.contact-section form::placeholder{
+    color: #fff;
+    opacity: 1;
+    
+}
+.btn-submit{
+    margin-top:6rem;
+    border:0;
+    background: #30bae7;
+    border-bottom:.3rem solid #299ec5;
+}
+.btn-submit:hover{
+    cursor: pointer;
+    background:aqua;
+}
+/*==Footer Section==*/
+.footer-section{
+    background: #344b8e;
+    padding: 3rem 0;
+    text-align: center;
+    border-top: .1rem solid #fff;
+}
+.footer-section li{
+    display: inline-block;
+    margin: 0 2rem;
+}
+.footer-section li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.4rem;
+}
+.footer-section li:hover a{
+    color: #30bae7;
+}
